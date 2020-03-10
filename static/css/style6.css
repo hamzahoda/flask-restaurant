@@ -1,0 +1,67 @@
+
+.aa{
+    text-decoration: none;
+    width:300px;
+    height:340px;
+    background-color: rgba(0,0,0,0.4); /*bhol gaya tha*/
+    margin:0 auto; 
+    margin-top: 50px;
+    padding-left: 100px;
+    color:white;
+    font-weight: bolder;
+    font-size: 27px;
+    /* border:3px solid black;  */
+    border-radius: 27px;
+    -webkit-border-radius:27px;
+    -o-border-radius:27px;
+    -moz-border-radius:27px;
+    box-shadow:4px 4px rgba(0,0,0,0.8);
+}
+
+.aa > input[type='text']{
+    /* margin:0;
+    padding:4px;
+    padding-left: 10px;
+    color:black */
+    width:200px;
+    height:35px;
+    border:0;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+    -moz-border-radius:5px;
+    padding-left: 5px;
+   
+}
+
+.aa > input[type="password"]{
+    /* margin:0;
+    padding:4px;
+    padding-left: 10px;
+    color:black */
+    width:200px;
+    height:35px;
+    border:0;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+    -moz-border-radius:5px;
+    padding-left: 5px;
+}
+
+.aa > input[type="submit"]{
+    /* margin:0;
+    margin-left: 2px;
+    padding:8px;
+    color:black;
+    background-color: rgb(119, 250, 195); */
+    width:100px;
+    height:35px;
+    border:0;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+    -moz-border-radius:5px;
+    background-color: skyblue;
+    font-weight: bolder;
+}

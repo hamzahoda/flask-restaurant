@@ -1,0 +1,13 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/restaurant",
+        "prod_uri":"mysql://root:@localhost/restaurant",
+        "admin-username":"hamza",
+        "admin-password":"adminlogin",
+        "gmail-user":"syedhamzahoda@gmail.com",
+        "gmail-password":"ilovemysnowy",
+        "no_of_photo":2
+    }
+}

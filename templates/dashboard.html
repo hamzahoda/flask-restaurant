@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{url_for('static',filename='images/icons/favicon.png')}}" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fonts/themify/themify-icons.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/animate/animate.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{url_for('static',filename='vendor/animsition/css/animsition.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/select2/select2.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{url_for('static',filename='vendor/daterangepicker/daterangepicker.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/slick/slick.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{url_for('static',filename='vendor/lightbox2/css/lightbox.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/main.css')}}">
+
+</head>
+<title>Admin Panel</title>
+
+<!-- Title Page -->
+<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15"
+	style="background-image: url('{{url_for('static',filename='images/bg-title-page-02.jpg')}}');">
+	<h2 class="tit6 t-center">
+		Admin Panel
+	</h2>
+</section>
+
+<body class="animsition">
+
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="{{url_for('static',filename='index.html')}}">
+							<img src="{{url_for('static',filename='images/icons/logo.png')}}" alt="IMG-LOGO"
+								data-logofixed="{{url_for('static',filename='images/icons/logo2.png')}}">
+						</a>
+					</div>
+
+					<h1 style="color: antiquewhite ;">Manage Your Menu</h1>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript"
+		src="{{url_for('static',filename='vendor/animsition/js/animsition.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/bootstrap/js/popper.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/select2/select2.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/daterangepicker/moment.min.js')}}"></script>
+	<script type="text/javascript"
+		src="{{url_for('static',filename='vendor/daterangepicker/daterangepicker.js')}}"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/slick/slick.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/slick-custom.js')}}"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/parallax100/parallax100.js')}}"></script>
+	<script type="text/javascript">
+		$('.parallax100').parallax100();
+	</script>
+	<!--===============================================================================================-->
+	<script type="text/javascript"
+		src="{{url_for('static',filename='vendor/countdowntime/countdowntime.js')}}"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/lightbox2/js/lightbox.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="{{url_for('static',filename='vendor/isotope/isotope.pkgd.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="{{url_for('static',filename='js/map-custom.js')}}"></script>
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+	<!-- dekh kar kiya journal se edit delete fetch wagera -->
+	<a href="/logout"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Logout</button></a>
+	<hr>
+	<h1>Basic Actions Menu</h1>
+	<hr>
+	<h1>Starters</h1>
+	
+	<a href="/edit-starter/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Dish</button></a>
+
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Dish</th>
+				<th>Tagline</th>
+				<th>Price</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for starter in starters %}
+			<tr>
+				<td>{{starter.sno}}</td>
+				<td>{{starter.dish}}</td>
+				<td>{{starter.tagline}}</td>
+				<td>{{starter.price}}</td>
+				<td><a href="/edit-starter/{{starter.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-starter/{{starter.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+
+	<hr>
+	<h1>Drinks</h1>
+	<a href="/edit-drink/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Drink</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Drink Name</th>
+				<th>Tagline</th>
+				<th>Price</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for drink in drinks %}
+			<tr>
+				<td>{{drink.sno}}</td>
+				<td>{{drink.drink_name}}</td>
+				<td>{{drink.tagline}}</td>
+				<td>{{drink.price}}</td>
+				<td><a href="/edit-drink/{{drink.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-drink/{{drink.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+
+	<hr>
+	<h1>Main Dish</h1>
+	<a href="/edit-maindish/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Dish</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Dish Name</th>
+				<th>Tagline</th>
+				<th>Price</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for maindishes in maindish %}
+			<tr>
+				<td>{{maindishes.sno}}</td>
+				<td>{{maindishes.main_dish}}</td>
+				<td>{{maindishes.tagline}}</td>
+				<td>{{maindishes.price}}</td>
+				<td><a href="/edit-maindish/{{maindishes.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-maindish/{{maindishes.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+
+	<hr>
+	<h1>Dessert</h1>
+	<a href="/edit-dessert/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Dessert</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Dessert Name</th>
+				<th>Tagline</th>
+				<th>Price</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for desserts in dessert %}
+			<tr>
+				<td>{{desserts.sno}}</td>
+				<td>{{desserts.dessert_name}}</td>
+				<td>{{desserts.tagline}}</td>
+				<td>{{desserts.price}}</td>
+				<td><a href="/edit-dessert/{{desserts.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-dessert/{{desserts.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<hr>
+	<h1>Lunch</h1>
+	<a href="/edit-lunch/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Lunch</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Lunch Name</th>
+				<th>Tagline</th>
+				<th>Price</th>
+				<th>Image</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for lunches in lunch %}
+			<tr>
+				<td>{{lunches.sno}}</td>
+				<td>{{lunches.lunch_dish}}</td>
+				<td>{{lunches.tagline}}</td>
+				<td>{{lunches.price}}</td>
+				<td>{{lunches.lunch_image}}</td>
+				<td><a href="/edit-lunch/{{lunches.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-lunch/{{lunches.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<hr>
+	<h1>Dinner</h1>
+	<a href="/edit-dinner/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Dinner</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Dinner Name</th>
+				<th>Tagline</th>
+				<th>Price</th>
+				<th>Image</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for dinners in dinner %}
+			<tr>
+				<td>{{dinners.sno}}</td>
+				<td>{{dinners.dinner_dish}}</td>
+				<td>{{dinners.tagline}}</td>
+				<td>{{dinners.price}}</td>
+				<td>{{dinners.dinner_image}}</td>
+				<td><a href="/edit-dinner/{{dinners.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-dinner/{{dinners.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<h1>Basic Action Gallery</h1>
+	<hr>
+	<h1>Interior Photo</h1>
+	<a href="/edit-interiorgallery/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Photo</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Interior Image</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for photo in interiorgallery %}
+			<tr>
+				<td>{{photo.sno}}</td>
+				<td>{{photo.interior}}</td>
+				<td><a href="/edit-interiorgallery/{{photo.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-interiorgallery/{{photo.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+
+	<hr>
+	<h1>Food Photo</h1>
+	<a href="/edit-foodgallery/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Photo</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Food Image</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for photo in foodgallery %}
+			<tr>
+				<td>{{photo.sno}}</td>
+				<td>{{photo.food}}</td>
+				<td><a href="/edit-foodgallery/{{photo.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-foodgallery/{{photo.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+
+	<hr>
+	<h1>Event Photo</h1>
+	<a href="/edit-eventgallery/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Photo</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Event Image</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for photo in eventgallery %}
+			<tr>
+				<td>{{photo.sno}}</td>
+				<td>{{photo.event}}</td>
+				<td><a href="/edit-eventgallery/{{photo.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-eventgallery/{{photo.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>	
+
+	<hr>
+	<h1>Guest Photo</h1>
+	<a href="/edit-guestgallery/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Photo</button></a>
+
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Guest Image</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for photo in guestgallery %}
+			<tr>
+				<td>{{photo.sno}}</td>
+				<td>{{photo.guest}}</td>
+				<td><a href="/edit-guestgallery/{{photo.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-guestgallery/{{photo.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>	
+
+
+
+<h1>Basic Action Blog</h1>
+	<hr>
+	<h1>Blog</h1>
+	<a href="/edit-blog/0"><button class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Add a new Blog</button></a>
+	<hr>
+	<table class="table table-hover table-dark">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Title</th>
+				<th>Tagline</th>
+				<th>Content</th>
+				<th>Slug</th>
+				<th>Date</th>
+				<th>Month</th>
+				<th>Image</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for blogs in blog %}
+			<tr>
+				<td>{{blogs.sno}}</td>
+				<td>{{blogs.title}}</td>
+				<td>{{blogs.content}}</td>
+				<td>{{blogs.blog_slug}}</td>
+				<td>{{blogs.date}}</td>
+				<td>{{blogs.month}}</td>
+				<td>{{blogs.blog_image}}</td>
+				<td><a href="/edit-blog/{{blogs.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Edit</button></a></td>
+				<td><a href="/delete-blog/{{blogs.sno}}"><button
+							class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Delete</button></a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>	
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style6.css')}}">
+</head>
+
+<body style="background-image:url('{{url_for('static',filename='images/master-slides-04.jpg')}}') ;">
+<form action="/dashboard" method="post">
+    <div class="aa"age:>
+        <h2>Admin Login</h2>
+        <input type='text' placeholder="Enter Your Name....." name="username"><br><br>
+        <input type="password" placeholder="Enter Your Password....." name="password"><br><br>
+        <input type="submit" value="Login" style="background-color: whitesmoke;"><br>
+    </div>
+</body>
+</form>
+</html>
